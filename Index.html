@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <title>Image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="login-page" class="container">
+    <h2>Login to Your Account</h2>
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<!-- Home Page (Books + Cart) -->
+<div id="home-page" class="container" style="display:none;">
+    <header>
+        <h1>Welcome to Our Bookstore</h1>
+        <div id="cart-summary">
+            <button onclick="viewCart()">View Cart</button>
+            <span>Total: $<span id="cart-total">0</span></span>
+        </div>
+    </header>
+
+    <section id="book-list">
+
+      
+
+        <!-- Dynamic Book List -->
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart Items Will Be Listed Here -->
+            </ul>
+            <button onclick="checkout()">Proceed to Checkout</button>
+            <button onclick="closeCart()">Close</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
